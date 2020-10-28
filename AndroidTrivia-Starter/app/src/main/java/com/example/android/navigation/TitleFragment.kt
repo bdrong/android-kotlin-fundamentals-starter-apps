@@ -1,6 +1,8 @@
 package com.example.android.navigation
 
+import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -35,7 +37,55 @@ class TitleFragment : Fragment() {
         }
 
         setHasOptionsMenu(true)
+
+        Log.i(javaClass.simpleName, "onCreateView called")
+
         return binding.root
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        Log.i(javaClass.simpleName, "onAttach called")
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i(javaClass.simpleName, "onCreated called")
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Log.i(javaClass.simpleName, "onViewCreated called")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i(javaClass.simpleName, "onStart called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.i(javaClass.simpleName, "onResume called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i(javaClass.simpleName, "onPause called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i(javaClass.simpleName, "onStop called")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.i(javaClass.simpleName, "onDestroyView called")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.i(javaClass.simpleName, "onDetach called")
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
