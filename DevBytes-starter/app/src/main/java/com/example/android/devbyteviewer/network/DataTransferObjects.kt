@@ -79,3 +79,7 @@ fun NetworkVideoContainer.asDomainModel(): List<DevByteVideo> {
                 thumbnail = it.thumbnail)
     }
 }
+/**
+ * Convert domain model to Network request
+ */
+// TODO in commandCloud_Android

@@ -78,6 +78,7 @@ dependencies {
 
     // retrofit for networking
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // this is not used and has a different version number than the reset of retrofit... :|
     implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
     implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
 
